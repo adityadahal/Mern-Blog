@@ -1,11 +1,18 @@
 import "./App.css";
+import { Grid } from "@mui/material";
+import Posts from "./Components/Posts/Posts";
+import Form from "./Components/Form/Form";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello NEPAL</h1>
-      <h2>Namaste</h2>
-    </div>
+    <Grid container alignItems="center" justifyContent="center" display="flex">
+      <Grid xs={12}>
+        <Posts />
+      </Grid>
+      <Grid xs={12}>
+        <Form />
+      </Grid>
+    </Grid>
   );
 }
 
