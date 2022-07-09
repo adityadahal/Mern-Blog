@@ -1,7 +1,10 @@
 import React from "react";
 import { TextField, Button } from "@mui/material";
 
+import makeStyles from "./styles";
+
 function Form() {
+  const classes = makeStyles();
   return (
     <div>
       <TextField label="email" />
