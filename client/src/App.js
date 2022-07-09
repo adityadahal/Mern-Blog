@@ -5,14 +5,26 @@ import Form from "./Components/Form/Form";
 
 function App() {
   return (
-    <Grid container alignItems="center" justifyContent="center" display="flex">
-      <Grid xs={12}>
-        <Posts />
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "80vh",
+      }}
+    >
+      <Grid
+        container
+        style={{ justifyContent: "center", alignItems: "center" }}
+      >
+        <Grid xs={12}>
+          <Posts />
+        </Grid>
+        <Grid xs={12}>
+          <Form />
+        </Grid>
       </Grid>
-      <Grid xs={12}>
-        <Form />
-      </Grid>
-    </Grid>
+    </div>
   );
 }
 
